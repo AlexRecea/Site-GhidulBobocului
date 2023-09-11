@@ -1,0 +1,13 @@
+body {
+  background-attachment: fixed;
+  background-image: url("cluj_bk.jpg");
+  height: 400rem;
+}
+
+.cluj {
+  background-color: aqua;
+}
+
+image {
+  aspect-ratio: relative;
+}
