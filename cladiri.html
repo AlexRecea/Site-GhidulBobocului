@@ -11,18 +11,456 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <nav aria-label="Acesta este un label">
-      <ul class="pagination pagination-lg">
-        <li class="page-item">
-          <span class="page-link">1</span>
-        </li>
-        <li class="page-item active" aria-current="page">
-          <a class="page-link" href="cladiri.html">2</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-      </ul>
+  <body
+    class="container-fluid d-flex flex-column justify-content-center align-content-center p-0"
+    style="
+      background-image: url(background-site.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #fcf7ec;
+    "
+  >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="best2.svg" alt="" height="80" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end me-5"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3 text-align-center p-0">
+              <a class="nav-link p-0 fs-5 my-1" href="index.html">Acasă</a>
+            </li>
+            <li class="nav-item dropdown mx-3 text-align-center p-0">
+              <a
+                class="nav-link dropdown-toggle p-0 fs-5 my-1"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Ghid
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="cladiri.html"
+                    >Universitatea Tehnică</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Tips & Tricks</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Ce să faci în timpul liber</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">BEST</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-3 text-align-center p-0">
+              <a
+                class="nav-link dropdown-toggle p-0 fs-5 my-1"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fun&More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Feedback</a></li>
+                <li><a class="dropdown-item" href="#">Meme Contest </a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Filmulețe</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">BEST Recomandă</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Programul 3,5%</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item mx-3 text-align-center p-0">
+              <a class="nav-link p-0 fs-5 my-1" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
+    <!-- Button pentru offcanvas -->
+    <button
+      class="btn btn-primary bottom-0 start-0 position-fixed m-3"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions"
+      aria-controls="offcanvasWithBothOptions"
+    >
+      >>
+    </button>
+
+    <!-- Titlul paginii -->
+    <div class="card rounded-5 my-4 mx-4" style="background-color: #fcf7ec">
+      <h1 class="align-self-center fw-bolder mt-2">Ghidul Bobocului</h1>
+    </div>
+
+    <!-- Offcanvas thing -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          Informații utile
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- <p>Try scrolling the rest of the page to see this option in action.</p> -->
+        <div class="row">
+          <div class="col-10">
+            <nav
+              id="navbar-example3"
+              class="h-100 flex-column align-items-stretch pe-4 border-end"
+            >
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Universitatea Tehnică</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ms-3 my-1" href="#item-1-1"
+                    >Conducerea Universității</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-2">Facultăți</a>
+                  <a class="nav-link ms-3 my-1" href="#item-1-3"
+                    >Clădirile UTCN</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-4"
+                    >Explicare Orar</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-5"
+                    >Termeni Specifici</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-6">Sesiune</a>
+                  <a class="nav-link ms-3 my-1" href="#item-1-7">Credite</a>
+                  <a class="nav-link ms-3 my-1" href="#item-1-8">Restanțe</a>
+                </nav>
+                <a class="nav-link" href="#item-2">Item 2</a>
+                <a class="nav-link" href="#item-3">Item 3</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                  <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                </nav>
+              </nav>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 1 - Universitatea Tehnica -->
+    <div class="d-flex align-content-center d-inline-block">
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example3"
+        data-bs-smooth-scroll="true"
+        class="scrollspy-example-2"
+        tabindex="0"
+      >
+        <div id="item-1" class="row d-flex justify-content-center">
+          <!-- <h4>Item 1</h4> -->
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center"
+            style="background-color: rgb(252, 247, 236, 0.9); font-weight: bold"
+          >
+            <h2 class="card-header fw-bold fst-italic">
+              Conducerea Facultății
+            </h2>
+            <div class="card-body d-flex flex-column align-self-center">
+              <!-- <p class="pt-2 pb-1 mb-1 mb-sm-0 py-sm-3">RECTOR - Prof. univ. dr. ing. Vasile ŢOPA</p> -->
+
+              <div class="my-sm-3">
+                <b class="fw-semibold fs-5">RECTOR</b>
+                <p class="fs-6 fw-bolder">Prof. univ. dr. ing. Vasile ŢOPA</p>
+              </div>
+              <div class="my-sm-3">
+                <b class="fw-semibold fs-5">SECRETAR-ȘEF UNIVERSITATE</b>
+                <p class="fs-6 fw-bolder">Dr. Ing. Lia CHIOREAN</p>
+              </div>
+              <div class="my-sm-3">
+                <b class="fw-semibold fs-5">REPREZENTANT STUDENȚI</b>
+                <p class="fs-6 fw-bolder">Sergiu Covaci</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="item-1-1" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center"
+            style="background-color: rgb(252, 247, 236, 0.9); font-weight: bold"
+          >
+            <h2 class="card-header fw-bold fst-italic">
+              Spre site-ul facultăților
+            </h2>
+            <div
+              class="container-fluid card-body d-flex flex-column flex-md-row align-self-center justify-content-evenly p-0"
+            >
+              <!-- <p class="pt-2 pb-1 mb-1 mb-sm-0 py-sm-3">RECTOR - Prof. univ. dr. ing. Vasile ŢOPA</p> -->
+
+              <div
+                class="my-sm-3 my-3 d-flex flex-row justify-content-around align-content-center w-100"
+              >
+                <a
+                  href="https://fau.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >AU</a
+                >
+                <a
+                  href="https://ac.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >AC</a
+                >
+
+                <a
+                  href="https://armm.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >ARMM</a
+                >
+              </div>
+              <div
+                class="my-sm-3 my-3 d-flex flex-row justify-content-around w-100"
+              >
+                <a
+                  href="https://constructii.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >Construcții</a
+                >
+                <a
+                  href="https://etti.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >ETTI</a
+                >
+                <a
+                  href="https://iirmp.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >IIRMP</a
+                >
+              </div>
+              <div
+                class="my-sm-3 my-3 d-flex flex-row justify-content-around w-100"
+              >
+                <a
+                  href="https://ie.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >IE</a
+                >
+                <a
+                  href="https://imm.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >IMM</a
+                >
+                <a
+                  href="https://instalatii.utcluj.ro/acasa.html"
+                  class="btn align-self-center fw-bold fs-5 col mx-2"
+                  style="background-color: rgb(180, 82, 27)"
+                  >Instalații</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="item-1-2" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center"
+            style="background-color: rgb(252, 247, 236, 0.9); font-weight: bold"
+          >
+            <h2 class="card-header fw-bold fst-italic">
+              Spre site-ul facultăților
+            </h2>
+            <div
+              class="container-fluid card-body d-flex flex-column flex-md-row align-self-center justify-content-evenly p-0"
+            ></div>
+          </div>
+        </div>
+        <div id="item-2">
+          <h4>Item 2</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            magnam, eum, minima officiis est totam omnis quo quae ipsa autem
+            porro adipisci! Incidunt, nulla praesentium sed neque culpa beatae
+            qui! Itaque deleniti voluptatem impedit vero blanditiis sapiente id,
+            nulla accusantium ullam quo similique perspiciatis, vel provident
+            nostrum odit non ducimus ad. Minima repudiandae tenetur consequuntur
+            non magni molestiae. Quis, quidem. Dicta repellendus et tempora
+            corporis, repellat suscipit sed expedita aspernatur numquam soluta,
+            placeat reiciendis maiores culpa molestiae commodi. Aspernatur fuga
+            consequatur nesciunt rem dolor hic corporis harum odio saepe
+            assumenda.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur magnam, eum, minima officiis est totam omnis quo quae
+            ipsa autem porro adipisci! Incidunt, nulla praesentium sed neque
+            culpa beatae qui! Itaque deleniti voluptatem impedit vero blanditiis
+            sapiente id, nulla accusantium ullam quo similique perspiciatis, vel
+            provident nostrum odit non ducimus ad. Minima repudiandae tenetur
+            consequuntur non magni molestiae. Quis, quidem. Dicta repellendus et
+            tempora corporis, repellat suscipit sed expedita aspernatur numquam
+            soluta, placeat reiciendis maiores culpa molestiae commodi.
+            Aspernatur fuga consequatur nesciunt rem dolor hic corporis harum
+            odio saepe assumenda. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde esse vitae ad obcaecati. Dolore quasi minima,
+            molestiae fugit dicta eligendi laborum! Qui pariatur, odio quos
+            laudantium accusamus vero sed necessitatibus! Dolorem, alias
+            quisquam minus illo fugit temporibus accusantium saepe repudiandae
+            sed, aspernatur totam. Maiores amet cumque provident, vitae ipsa
+            deserunt quos, eius culpa distinctio laudantium sed exercitationem
+            consequatur ab. Natus. Sint nemo iste, perferendis voluptatibus
+            praesentium, rem dolores ratione sequi, quod quisquam dolor culpa
+            perspiciatis corrupti cum? Temporibus deleniti, illo neque
+            consectetur ut nesciunt perspiciatis ullam beatae. Itaque, amet
+            impedit?
+          </p>
+        </div>
+        <div id="item-3">
+          <h4>Item 3</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            magnam, eum, minima officiis est totam omnis quo quae ipsa autem
+            porro adipisci! Incidunt, nulla praesentium sed neque culpa beatae
+            qui! Itaque deleniti voluptatem impedit vero blanditiis sapiente id,
+            nulla accusantium ullam quo similique perspiciatis, vel provident
+            nostrum odit non ducimus ad. Minima repudiandae tenetur consequuntur
+            non magni molestiae. Quis, quidem. Dicta repellendus et tempora
+            corporis, repellat suscipit sed expedita aspernatur numquam soluta,
+            placeat reiciendis maiores culpa molestiae commodi. Aspernatur fuga
+            consequatur nesciunt rem dolor hic corporis harum odio saepe
+            assumenda.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur magnam, eum, minima officiis est totam omnis quo quae
+            ipsa autem porro adipisci! Incidunt, nulla praesentium sed neque
+            culpa beatae qui! Itaque deleniti voluptatem impedit vero blanditiis
+            sapiente id, nulla accusantium ullam quo similique perspiciatis, vel
+            provident nostrum odit non ducimus ad. Minima repudiandae tenetur
+            consequuntur non magni molestiae. Quis, quidem. Dicta repellendus et
+            tempora corporis, repellat suscipit sed expedita aspernatur numquam
+            soluta, placeat reiciendis maiores culpa molestiae commodi.
+            Aspernatur fuga consequatur nesciunt rem dolor hic corporis harum
+            odio saepe assumenda. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde esse vitae ad obcaecati. Dolore quasi minima,
+            molestiae fugit dicta eligendi laborum! Qui pariatur, odio quos
+            laudantium accusamus vero sed necessitatibus! Dolorem, alias
+            quisquam minus illo fugit temporibus accusantium saepe repudiandae
+            sed, aspernatur totam. Maiores amet cumque provident, vitae ipsa
+            deserunt quos, eius culpa distinctio laudantium sed exercitationem
+            consequatur ab. Natus. Sint nemo iste, perferendis voluptatibus
+            praesentium, rem dolores ratione sequi, quod quisquam dolor culpa
+            perspiciatis corrupti cum? Temporibus deleniti, illo neque
+            consectetur ut nesciunt perspiciatis ullam beatae. Itaque, amet
+            impedit?
+          </p>
+        </div>
+        <div id="item-3-1">
+          <h5>Item 3-1</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            magnam, eum, minima officiis est totam omnis quo quae ipsa autem
+            porro adipisci! Incidunt, nulla praesentium sed neque culpa beatae
+            qui! Itaque deleniti voluptatem impedit vero blanditiis sapiente id,
+            nulla accusantium ullam quo similique perspiciatis, vel provident
+            nostrum odit non ducimus ad. Minima repudiandae tenetur consequuntur
+            non magni molestiae. Quis, quidem. Dicta repellendus et tempora
+            corporis, repellat suscipit sed expedita aspernatur numquam soluta,
+            placeat reiciendis maiores culpa molestiae commodi. Aspernatur fuga
+            consequatur nesciunt rem dolor hic corporis harum odio saepe
+            assumenda.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur magnam, eum, minima officiis est totam omnis quo quae
+            ipsa autem porro adipisci! Incidunt, nulla praesentium sed neque
+            culpa beatae qui! Itaque deleniti voluptatem impedit vero blanditiis
+            sapiente id, nulla accusantium ullam quo similique perspiciatis, vel
+            provident nostrum odit non ducimus ad. Minima repudiandae tenetur
+            consequuntur non magni molestiae. Quis, quidem. Dicta repellendus et
+            tempora corporis, repellat suscipit sed expedita aspernatur numquam
+            soluta, placeat reiciendis maiores culpa molestiae commodi.
+            Aspernatur fuga consequatur nesciunt rem dolor hic corporis harum
+            odio saepe assumenda. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde esse vitae ad obcaecati. Dolore quasi minima,
+            molestiae fugit dicta eligendi laborum! Qui pariatur, odio quos
+            laudantium accusamus vero sed necessitatibus! Dolorem, alias
+            quisquam minus illo fugit temporibus accusantium saepe repudiandae
+            sed, aspernatur totam. Maiores amet cumque provident, vitae ipsa
+            deserunt quos, eius culpa distinctio laudantium sed exercitationem
+            consequatur ab. Natus. Sint nemo iste, perferendis voluptatibus
+            praesentium, rem dolores ratione sequi, quod quisquam dolor culpa
+            perspiciatis corrupti cum? Temporibus deleniti, illo neque
+            consectetur ut nesciunt perspiciatis ullam beatae. Itaque, amet
+            impedit?
+          </p>
+        </div>
+        <div id="item-3-2">
+          <h5>Item 3-2</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            magnam, eum, minima officiis est totam omnis quo quae ipsa autem
+            porro adipisci! Incidunt, nulla praesentium sed neque culpa beatae
+            qui! Itaque deleniti voluptatem impedit vero blanditiis sapiente id,
+            nulla accusantium ullam quo similique perspiciatis, vel provident
+            nostrum odit non ducimus ad. Minima repudiandae tenetur consequuntur
+            non magni molestiae. Quis, quidem. Dicta repellendus et tempora
+            corporis, repellat suscipit sed expedita aspernatur numquam soluta,
+            placeat reiciendis maiores culpa molestiae commodi. Aspernatur fuga
+            consequatur nesciunt rem dolor hic corporis harum odio saepe
+            assumenda.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur magnam, eum, minima officiis est totam omnis quo quae
+            ipsa autem porro adipisci! Incidunt, nulla praesentium sed neque
+            culpa beatae qui! Itaque deleniti voluptatem impedit vero blanditiis
+            sapiente id, nulla accusantium ullam quo similique perspiciatis, vel
+            provident nostrum odit non ducimus ad. Minima repudiandae tenetur
+            consequuntur non magni molestiae. Quis, quidem. Dicta repellendus et
+            tempora corporis, repellat suscipit sed expedita aspernatur numquam
+            soluta, placeat reiciendis maiores culpa molestiae commodi.
+            Aspernatur fuga consequatur nesciunt rem dolor hic corporis harum
+            odio saepe assumenda. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde esse vitae ad obcaecati. Dolore quasi minima,
+            molestiae fugit dicta eligendi laborum! Qui pariatur, odio quos
+            laudantium accusamus vero sed necessitatibus! Dolorem, alias
+            quisquam minus illo fugit temporibus accusantium saepe repudiandae
+            sed, aspernatur totam. Maiores amet cumque provident, vitae ipsa
+            deserunt quos, eius culpa distinctio laudantium sed exercitationem
+            consequatur ab. Natus. Sint nemo iste, perferendis voluptatibus
+            praesentium, rem dolores ratione sequi, quod quisquam dolor culpa
+            perspiciatis corrupti cum? Temporibus deleniti, illo neque
+            consectetur ut nesciunt perspiciatis ullam beatae. Itaque, amet
+            impedit?
+          </p>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
