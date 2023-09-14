@@ -10,4 +10,5 @@ body {
 
 image {
   aspect-ratio: relative;
+  box-sizing: border-box;
 }
