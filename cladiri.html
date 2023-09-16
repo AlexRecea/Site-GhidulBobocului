@@ -127,7 +127,7 @@
 
     <!-- Offcanvas thing -->
     <div
-      class="offcanvas offcanvas-start"
+      class="offcanvas offcanvas-start col-10 col-md-3"
       data-bs-scroll="true"
       tabindex="-1"
       id="offcanvasWithBothOptions"
@@ -146,30 +146,85 @@
       </div>
       <div class="offcanvas-body">
         <div class="row">
-          <div class="col-10">
+          <div>
             <nav
               id="navbar-example3"
               class="h-100 flex-column align-items-stretch pe-4 border-end"
             >
               <nav class="nav nav-pills flex-column">
-                <a class="nav-link" href="#item-1">Universitatea Tehnică</a>
+                <a
+                  class="nav-link"
+                  href="#item-1"
+                  data-bs-dismiss="offcanvas"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#item-1"
+                  >Universitatea Tehnică</a
+                >
                 <nav class="nav nav-pills flex-column">
-                  <a class="nav-link ms-3 my-1" href="#item-1-1"
+                  <a
+                    class="nav-link ms-3 my-1"
+                    href="#item-1-1"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#item-1-1"
                     >Conducerea Universității</a
                   >
-                  <a class="nav-link ms-3 my-1" href="#item-1-2">Facultăți</a>
-                  <a class="nav-link ms-3 my-1" href="#item-1-3"
+                  <a
+                    class="nav-link ms-3 my-1"
+                    href="#item-1-2"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#item-1-2"
+                    >Facultăți</a
+                  >
+                  <a
+                    class="nav-link ms-3 my-1"
+                    href="#item-1-3"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#item-1-3"
                     >Clădirile UTCN</a
                   >
-                  <a class="nav-link ms-3 my-1" href="#item-1-4"
+                  <a
+                    class="nav-link ms-3 my-1"
+                    href="#item-1-4"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#item-1-4"
                     >Explicare Orar</a
                   >
-                  <a class="nav-link ms-3 my-1" href="#item-1-5"
+                  <a
+                    class="nav-link ms-3 my-1"
+                    href="#item-1-5"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-toggle="offcanvasWithBothOptions"
+                    data-bs-target="#item-1-5"
                     >Termeni Specifici</a
                   >
-                  <a class="nav-link ms-3 my-1" href="#item-1-6">Sesiune</a>
-                  <a class="nav-link ms-3 my-1" href="#item-1-7">Credite</a>
-                  <a class="nav-link ms-3 my-1" href="#item-1-8">Restanțe</a>
+                  <a
+                    class="nav-link ms-3 my-1"
+                    href="#item-1-6"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#item-1-6"
+                    >Sesiune</a
+                  >
+                  <a
+                    class="nav-link ms-3 my-1"
+                    href="#item-1-7"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="transfer"
+                    >Credite</a
+                  >
+                  <a
+                    class="nav-link ms-3 my-1"
+                    href="#item-1-8"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="transfer"
+                    >Restanțe</a
+                  >
                 </nav>
                 <a class="nav-link" href="#item-2">Item 2</a>
                 <a class="nav-link" href="#item-3">Item 3</a>
@@ -191,6 +246,8 @@
         data-bs-target="#navbar-example3"
         data-bs-smooth-scroll="true"
         class="scrollspy-example-2"
+        data-bs-dismiss="offcanvas"
+        data-bs-toggle="offcanvas"
         tabindex="0"
       >
         <div id="item-1" class="row d-flex justify-content-center">
@@ -904,8 +961,322 @@
             </div>
           </div>
         </div>
+        <!-- despre restante -->
+        <div id="item-1-8" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center pb-3"
+            style="background-color: rgb(252, 247, 236, 0.9); font-weight: bold"
+          >
+            <h2 class="card-header fw-bold fst-italic">Despre Restanțe</h2>
+            <p class="mt-3 fw-bold">
+              În privința restanțelor... Dacă nu ai reușit să promovezi un
+              examen în sesiunea curentă, ai o altă șansă în sesiunea "de
+              toamnă" (care anul acesta a avut loc în august) sau în sesiunile
+              speciale. Aceste sesiuni îți oferă posibilitatea să susții examene
+              din toate materiile, indiferent de anul de studiu.
+            </p>
+            <p>
+              Taxa variază în funcție de prezența la examinările din sesiunea
+              precedentă:
+            </p>
+            <p>
+              1.dacă te-ai prezentat la cel puțin una dintre cele două examinări
+              din sesiune, atunci prețul va fi de 100 de lei/examen;
+            </p>
+            <p>
+              2.dacă nu te-ai prezentat la niciuna dintre cele două examinări
+              din sesiune, atunci prețul va fi de 150 de lei/examen.
+            </p>
+            <hr class="border border-black border-2" />
+            <b class="fw-bolder fs-5 align-self-center">FACTS</b>
+            <p>
+              Dacă ai promovat un examen, dar simți că poți obține o notă mai
+              bună, ai dreptul la patru măriri de notă pe an, dintre care două
+              sunt gratuite, iar celelalte implică un cost (50 de lei/mărire).
+            </p>
+          </div>
+        </div>
+
+        <!-- despre burse -->
+        <div id="item-1-9" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center pb-3"
+            style="background-color: rgb(252, 247, 236, 0.9); font-weight: bold"
+          >
+            <h2 class="card-header fw-bold fst-italic">Burse</h2>
+            <p class="mt-3 fw-bold">
+              Ca student la Universitatea Tehnică, ai oportunitatea de a obține
+              mai multe tipuri de burse: de performanță academică, de merit,
+              sociale, speciale sau Erasmus. Indiferent de categoria în care te
+              încadrezi, aceste burse sunt acordate pe o perioadă de șase luni.
+            </p>
+            <hr class="border border-black border-2" />
+            <p class="mt-3">
+              Bursele pentru stimularea performanței sunt împărțite în două
+              categorii. Bursele de performanță academică sunt acordate,
+              începând cu anul II de studiu, studenților care au obținut cele
+              mai mari medii (nu mai puțin de 9,00) în anul (ulterior,
+              semestrul) precedent. Bursele de performanță științifică se acordă
+              prin intermediul unui concurs organizat de universitate, iar
+              condițiile și criteriile de concurs sunt stabilite de către
+              Consiliul de Administrație.
+            </p>
+            <div
+              class="row d-flex flex-column flex-md-row justify-content-center align-items-start align-content-center"
+            >
+              <div class="col-10 col-md-4">
+                <a
+                  class="btn mt-3 fw-bold fs-6 w-100"
+                  data-bs-toggle="collapse"
+                  href="#burseMerit"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="burseMerit"
+                  style="background-color: rgb(180, 82, 27)"
+                >
+                  Burse de Merit
+                </a>
+                <div class="collapse" id="burseMerit">
+                  <div class="card card-body">
+                    Bursele de merit sunt oferite începând cu cel de-al doilea
+                    semestru al primului an de studiu, după ce s-au acordat
+                    bursele pentru performanță academică și socială. Ele se
+                    acordă în ordinea descrescătoare a mediei generale (nu mai
+                    puțin de 7,00) obținute de către studenți în anul
+                    universitar precedent, respectiv semestrul I.
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-md-4">
+                <a
+                  class="btn mt-3 fw-bold fs-6 w-100"
+                  data-bs-toggle="collapse"
+                  href="#burseSociale"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="burseSociale"
+                  style="background-color: rgb(180, 82, 27)"
+                >
+                  Burse Sociale
+                </a>
+                <div class="collapse" id="burseSociale">
+                  <div class="card card-body">
+                    Bursele sociale sunt destinate studenților aflați în
+                    situații dificile, precum orfani, cei care suferă de
+                    afecțiuni medicale sau se află sub îngrijirea unităților
+                    medicale, sau a căror familie nu a avut un venit lunar net
+                    mediu per membru de familie mai mare decât salariul minim
+                    net pe economie în ultimele 3 luni înainte de începerea
+                    semestrului sau anului universitar.
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-md-4">
+                <a
+                  class="btn mt-3 fw-bold fs-6 w-100"
+                  data-bs-toggle="collapse"
+                  href="#burseSpeciale"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="burseSpeciale"
+                  style="background-color: rgb(180, 82, 27)"
+                >
+                  Burse Speciale
+                </a>
+                <div class="collapse" id="burseSpeciale">
+                  <div class="card card-body">
+                    Bursele speciale sunt acordate studenților care au
+                    înregistrat realizări deosebite în domeniul
+                    cultural-artistic, performanțe sportive remarcabile sau s-au
+                    implicat activ în activități extracurriculare și de
+                    voluntariat. De asemenea, Universitatea poate acorda astfel
+                    de burse și în alte situații speciale, stabilite de
+                    instituție.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- despre Erasmus -->
+        <div id="item-1-10" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center pb-3"
+            style="background-color: rgb(252, 247, 236, 0.9); font-weight: bold"
+          >
+            <h2 class="card-header fw-bold fst-italic">Erasmus</h2>
+            <p class="mt-3 fw-bold">
+              În plus, o oportunitate interesantă este oferită de bursele
+              Erasmus. Dacă îți dorești să călătorești, să studiezi într-o altă
+              țară și să-ți faci prieteni noi, Erasmus este pentru tine! Acest
+              program îți permite să studiezi în străinătate pentru o perioadă
+              de timp între 3 și 12 luni, având șansa de a explora locuri noi și
+              a experimenta alte culturi.
+            </p>
+            <hr class="border border-black border-2" />
+            <p class="mt-3">
+              Nu trebuie să plătești taxe de înscriere sau de studii la
+              universitatea gazdă. Studiile realizate în cadrul programului pot
+              fi echivalate și vor fi luate în considerare la obținerea
+              diplomei. Mai mult, primești o bursă din partea UE pentru a
+              acoperi costurile de cazare și transport.
+            </p>
+            <hr class="border border-black border-2" />
+            <p class="mt-3">
+              Universitatea Tehnică din Cluj-Napoca are parteneriate cu
+              universități din toată Europa, astfel că trebuie doar să cauți ce
+              ți se potrivește. Dacă dorești să afli mai multe detalii, poți
+              accesa codul QR pentru a vedea condițiile necesare pentru
+              obținerea acestei burse.
+            </p>
+            <a
+              href="http://bri.utcluj.ro/?ori=ErasmusPrezentare"
+              class="btn align-self-center fw-bold"
+              style="background-color: rgb(180, 82, 27)"
+              >Spre prezentarea Erasmus</a
+            >
+          </div>
+        </div>
+
+        <!-- extra info -->
+        <div id="item-1-11" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center pb-3"
+            style="background-color: rgb(252, 247, 236, 0.9); font-weight: bold"
+          >
+            <h2 class="card-header fw-bold fst-italic">Lucruri Importante</h2>
+            <p class="mt-3 fw-bold">
+              Chiar dacă am abordat majoritatea subiectelor importante legate de
+              Universitate, există câteva aspecte pe care merită să le menționăm
+              și care vor aduce cu siguranță mai mult confort în viața ta de
+              student.
+            </p>
+            <hr class="border border-black border-2" />
+            <p class="mt-3 fw-bolder">
+              Centrul de Consiliere și Orientare în Carieră
+            </p>
+            <p class="fw-medium">
+              CCOC (Centrul de Consiliere și Orientare în Carieră) este o
+              instituție academică și profesională ce oferă informații, sprijin
+              și monitorizare studenților și absolvenților Universității Tehnice
+              pentru dezvoltarea lor personală și profesională. De asemenea,
+              CCOC facilitează comunicarea între studenți/absolvenți și
+              angajatori. În Cluj-Napoca, acesta este reprezentat prin Oficiul
+              de Consiliere și Orientare în Carieră (OCOC).
+            </p>
+            <p class="d-inline-block fw-medium">
+              Este important de știut că poți să te adresezi OCOC nu doar pentru
+              nelămuriri legate de parcursul profesional, ci și pentru ședințe
+              gratuite de consiliere psihologică. Acești profesioniști sunt
+              disponibili pentru a te ajuta. Poți contacta consilierul de
+              carieră la adresa:
+              <a href="mailto:office.ococ@ococ.utcluj.ro"
+                >office.ococ@ococ.utcluj.ro</a
+              >
+              și consilierul psihologic la adresa:
+              <a href="mailto:psih.ococ@ococ.utcluj.ro"
+                >psih.ococ@ococ.utcluj.ro</a
+              >.
+            </p>
+            <hr class="border border-black border-2" />
+            <p class="mt-3 fw-bolder">Carnetul de student</p>
+            <p class="fw-medium">
+              Carnetul de student este un obiect de care trebuie să ai grijă!
+              Acesta este necesar pentru a te prezenta la examene, a înregistra
+              notele după parțiale și examene (dacă dorești) sau pentru a obține
+              diverse carduri (bibliotecă, transport, ISIC, etc.). Dacă îl
+              pierzi, va trebui să completezi o cerere și să plătești o taxă în
+              valoare de 100 de lei. De aceea, este important să îl păstrezi
+              într-o stare bună.
+            </p>
+            <hr class="border border-black border-2" />
+            <p class="mt-3 fw-bolder">Cardurile non-bancare</p>
+            <p class="fw-medium">
+              Cunoscute și sub numele de carduri studențești, StudCard, Omnipass
+              și altele îți pot oferi numeroase reduceri, de la cafea și mâncare
+              până la servicii stomatologice, bilete de cinema sau tatuaje. Una
+              dintre cele mai utile reduceri este cea la transportul în comun,
+              despre care vei afla mai multe în capitolul următor.
+            </p>
+
+            <div
+              class="row d-flex flex-column flex-md-row justify-content-center align-items-start align-content-center mb-3"
+            >
+              <div class="col-10 col-md-4">
+                <a
+                  href="https://www.omnipass.eu"
+                  class="btn align-self-center fw-bold w-100"
+                  style="background-color: rgb(180, 82, 27)"
+                  >Omnipass</a
+                >
+              </div>
+              <div class="col-10 col-md-4">
+                <a
+                  href="http://www.studcard.ro/Studcard/cum-imi-fac-sc/"
+                  class="btn align-self-center fw-bold w-100"
+                  style="background-color: rgb(180, 82, 27)"
+                  >Studcard</a
+                >
+              </div>
+              <div class="col-10 col-md-4">
+                <a
+                  href="https://www.isic.ro/"
+                  class="btn align-self-center fw-bold w-100"
+                  style="background-color: rgb(180, 82, 27)"
+                  >Isic</a
+                >
+              </div>
+            </div>
+            <hr class="border border-black border-2" />
+          </div>
+        </div>
       </div>
     </div>
+    <footer
+      class="container-fluid d-flex flex-column mt-5 pb-2"
+      style="background-color: rgb(180, 82, 27)"
+    >
+      <div class="row-cols-12 d-flex justify-content-center">
+        <a
+          class="col-2 col-md-1 px-md-4 py-md-2 mx-2"
+          href="https://www.facebook.com/BESTcluj"
+        >
+          <img
+            src="facebook-alb.png"
+            class="img-fluid align-self-center"
+            alt=""
+          />
+        </a>
+        <a
+          class="col-2 col-md-1 px-md-4 py-md-2 mx-2"
+          href="https://www.instagram.com/best_clujnapoca/"
+        >
+          <img
+            src="instagram-alb.png"
+            class="img-fluid align-self-center"
+            alt=""
+          />
+        </a>
+        <a
+          class="col-2 col-md-1 px-md-4 py-md-2 mx-2"
+          href="https://www.linkedin.com/company/best-cluj-napoca"
+        >
+          <img
+            src="linkedin-alb.png"
+            class="img-fluid align-self-center"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="text-center text-wrap fs-6 d-flex justify-content-center">
+        <p class="m-0">
+          © 2023 Copyright:
+          <b> BEST Cluj-Napoca </b>
+          | All Rights Reserved
+        </p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
