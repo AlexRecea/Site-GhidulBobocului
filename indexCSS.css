@@ -12,3 +12,7 @@ image {
   aspect-ratio: relative;
   box-sizing: border-box;
 }
+
+p {
+  font-weight: normal;
+}
