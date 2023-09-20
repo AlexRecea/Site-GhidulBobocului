@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <title>BEST | Ghidul Bobocului</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="mrisca_32_32-01.png" />
+    <!-- <link href="indexCSS.css" /> -->
+  </head>
+  <body
+    class="container-fluid d-flex flex-column justify-content-center align-content-center p-0"
+    style="
+      background-image: url(background-site.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #fcf7ec;
+    "
+  >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <img src="best2.svg" alt="" height="80" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3 text-align-center p-0">
+              <a class="nav-link p-0 fs-5 my-1" href="index.html">Acasă</a>
+            </li>
+            <li class="nav-item dropdown mx-3 text-align-center p-0">
+              <a
+                class="nav-link dropdown-toggle p-0 fs-5 my-1"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Ghid
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="universitateaTehnica.html"
+                    >Universitatea Tehnică</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="tips&tricks.html">Tips & Tricks</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="timpLiber.html">Ce să faci în timpul liber?</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="best.html">BEST</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-3 text-align-center p-0">
+              <a
+                class="nav-link dropdown-toggle p-0 fs-5 my-1"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fun&More
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://docs.google.com/forms/d/1VE5uNrtYYf4G2s-a1jqJHJneg8cS2P5WjivxQ4FAp-g/"
+                    >Feedback</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.tiktok.com/@ghidul_bobocului2023?_t=8fZuZfGTli4&_r=1"
+                    >Filmulețe</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">BEST Recomandă</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://bestcj.ro/3-5-percent-program/"
+                    >Programul 3,5%</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item mx-3 text-align-center p-0">
+              <a class="nav-link p-0 fs-5 my-1" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- buton pentru offcanvas -->
+    <button
+      class="btn bottom-0 start-0 position-fixed m-3 text-white fs-5"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions"
+      aria-controls="offcanvasWithBothOptions"
+      style="z-index: 1; background-color: black"
+    >
+      &rarr;
+    </button>
+
+    <!-- offcanvas thing -->
+    <div
+      class="offcanvas offcanvas-start col-12 col-md-3 w-50 pe-0"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+      style="overflow-x: hidden"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cuprins</h5>
+        <button
+          type="button"
+          class="btn-close btn-dark"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0 ms-2">
+        <div class="row">
+          <div>
+            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link nav- my-1" href="#item-1-1" data-bs-target="#item-1-1">BEST</a>
+                <a class="nav-link my-1" href="#item-1-2" data-bs-target="#item-1-2"
+                  >BEST Cluj-Napoca</a
+                >
+                <a class="nav-link my-1" href="#item-1-3" data-bs-target="#item-1-3"
+                  >BEST Courses</a
+                >
+                <a class="nav-link my-1" href="#item-1-4" data-bs-target="#item-1-4">Jobshop®</a>
+                <a class="nav-link my-1" href="#item-1-5" data-bs-target="#item-1-5">CodeRun</a>
+                <a class="nav-link my-1" href="#item-1-6" data-bs-target="#item-1-6"
+                  >BattleLab Robotica</a
+                >
+              </nav>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- titlul paginii -->
+    <div class="card rounded-5 my-4 mx-4" style="background-color: #fcf7ec">
+      <h1 class="align-self-center fw-bolder mt-2 text-center">Despre BEST</h1>
+    </div>
+
+    <div class="d-flex justify-content-center d-inline-block">
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example3"
+        data-bs-smooth-scroll="true"
+        class="scrollspy-example-2"
+        data-bs-dismiss="offcanvas"
+        data-bs-toggle="offcanvas"
+        tabindex="0"
+      >
+        <!-- tab pentru voluntariat -->
+        <div id="item-1-1" class="row d-flex justify-content-center">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center p-0"
+            style="background-color: rgb(252, 247, 236, 0.9)"
+          >
+            <h2 class="card-header fw-bold fst-italic">BEST</h2>
+            <div class="card-body d-flex flex-column align-self-center">
+              <p>
+                Fondată încă din 1989, BEST - Board of European Students of Technology este o
+                organizație studențească dedicată facilitării accesului tinerilor din universitățile
+                tehnice din Europa la oportunități inovatoare. Misiunea principală a organizației
+                constă în dezvoltarea studenților prin furnizarea de programe de dezvoltare,
+                promovarea cooperării, încurajarea comunicării eficiente și facilitarea schimburilor
+                de experiență.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- tab pentru aventura si distractie     -->
+        <div id="item-1-2" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center p-0"
+            style="background-color: rgb(252, 247, 236, 0.9)"
+          >
+            <h2 class="card-header fw-bold fst-italic">BEST Cluj-Napoca</h2>
+            <div class="card-body d-flex flex-column align-self-center">
+              <p class="mb-0">
+                Înființat în anul 1995, BEST Cluj-Napoca reprezintă primul ONG al Universității
+                Tehnice din Cluj-Napoca. De-a lungul celor 27 de ani, voluntarii noștri au continuat
+                să îmbrățișeze misiunea organizației, contribuind astfel la consolidarea legăturilor
+                de prietenie și, mai important, la crearea unei mici familii dedicate învățării și
+                dezvoltării personale. Prin intermediul activităților noastre, ne propunem să oferim
+                studenților clujeni o serie de evenimente captivante din care pot rămâne cu ceva.
+                Acestea includ competiții inginerești, oportunități legate de carieră, cursuri
+                sezoniere și multe alte experiențe ce nu ar trebui ratate.
+              </p>
+              <hr class="border-3 border-black opacity-100" />
+              <b class="fs-5 mb-3">FACTS</b>
+              <p>
+                Dacă vrei să afli mai multe despre noi, poți vizita site-ul organizației noastre.
+              </p>
+              <a
+                href="https://bestcj.ro/"
+                class="btn align-self-center text-white"
+                style="background-color: rgb(180, 82, 27)"
+                >BEST Cluj-Napoca</a
+              >
+              <hr class="border-3 border-black opacity-100" />
+              <b class="fs-5 mb-3">De ce BEST?</b>
+              <p>
+                Deoarece suntem o mică familie, care se bucură de diversitatea și unicitatea
+                fiecăruia dintre noi; tocmai aceste diferențe ne aduc împreună și ne consolidează
+                legăturile. BEST nu furnizează doar oportunități de dezvoltare, ci și prietenii pe
+                termen lung și experiențe inedite, cum ar fi excursii în natură, aventuri
+                captivante, petreceri memorabile, ieșiri la teatru sau vizite la muzee, și alte
+                activități speciale.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- tab pentru evenimente -->
+        <div id="item-1-3" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center p-0"
+            style="background-color: rgb(252, 247, 236, 0.9)"
+          >
+            <h2 class="card-header fw-bold fst-italic">BEST Courses</h2>
+            <div class="card-body d-flex flex-column align-self-center">
+              <!-- <b class="fs-5 my-3">FACTS</b> -->
+              <p>
+                Participarea la cursurile de sezon BEST îți deschide ușa către oportunitatea de a
+                lua parte la lecții în diverse țări europene, permițându-ți să explorezi culturi
+                variate, să interacționezi cu oameni captivanți și să dobândești cunoștințe în
+                domenii tehnice și nu numai. Prin intermediul acestor cursuri, vei avea șansa de a
+                călători aproape gratuit în orașe frumoase din Europa, de a te conecta cu persoane
+                ce împărtășesc pasiuni similare și de a crea amintiri memorabile.
+              </p>
+              <p>
+                Astfel, posibilitatea de a te înregistra la unul dintre cursurile noastre și de a
+                trăi autentic experiența oferită reprezintă o oportunitate pe care ar fi păcat să o
+                ratezi. Îți recomandăm să vizitezi site-ul pentru a obține mai multe informații
+                despre cursurile disponibile. Nu rata ediția cursurilor din iarnă care începe în
+                data de 3 septembrie și se încheie la data de 1 octombrie.
+              </p>
+              <hr class="border-3 border-black opacity-100" />
+              <b class="fs-5 mb-3">KIND REMINDER</b>
+              <p>Fii cu ochii pe noi și pentru edițiile din primăvară, vară și toamnă.</p>
+              <a
+                href="https://courses.bestcj.ro/"
+                class="btn align-self-center text-white"
+                style="background-color: rgb(180, 82, 27)"
+                >BEST Courses</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- tab pentru cultura -->
+        <div id="item-1-4" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center p-0"
+            style="background-color: rgb(252, 247, 236, 0.9)"
+          >
+            <h2 class="card-header fw-bold fst-italic">Jobshop®</h2>
+            <div class="card-body d-flex flex-column align-self-center">
+              <!-- <b class="fs-5 my-3">FACTS</b> -->
+              <p>
+                JobShop® reprezintă un eveniment de carieră gândit și realizat de către studenți,
+                special pentru studenți. Așadar, pregătește-te pentru o experiență cu totul aparte
+                și fii parte din JobShop® 2024, unde vei avea oportunitatea de a interacționa direct
+                cu reprezentanții companiilor, să explorezi mediul în care aceștia activează prin
+                vizite la sediul companiilor pe care ți le punem la dispoziție. Ai ocazia să fii în
+                centrul atenției în cadrul acestui eveniment: toate privirile vor fi îndreptate spre
+                tine și spre deciziile tale viitoare legate de carieră.
+              </p>
+              <p>
+                Indiferent dacă ești atras de mediul start-up-urilor sau dorești să discuți cu
+                persoane cu traiectorii remarcabile în lumea profesională, JobShop® îți extinde
+                invitația și către evenimente prin care poți discuta cu acești oameni de succes.
+              </p>
+              <p>
+                Nu rata ocazia de a ni te alătura la JobShop® anul acesta! Acest eveniment
+                reprezintă ocazia ta de a descoperi job-ul sau internship-ul perfect pentru tine.
+              </p>
+              <a
+                href="https://jobshop.bestcj.ro/"
+                class="btn align-self-center text-white"
+                style="background-color: rgb(180, 82, 27)"
+                >JobShop®</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- tab pentru OSUT -->
+        <div id="item-1-5" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center p-0"
+            style="background-color: rgb(252, 247, 236, 0.9)"
+          >
+            <h2 class="card-header fw-bold fst-italic">CodeRun</h2>
+            <div class="card-body d-flex flex-column align-self-center">
+              <!-- <b class="fs-5 my-3">FACTS</b> -->
+              <p>
+                CodeRun reprezintă un maraton IT inovator, caracterizat de o serie de provocări
+                împărțite pe două nivele de dificultate: easy și hard. Acest format asigură
+                accesibilitate chiar și pentru cei ce nu au avut experiențe anterioare în competiții
+                similare.
+              </p>
+              <p>
+                În etapa de training, participanții au oportunitatea de a se familiariza cu
+                tehnologii de actualitate în domeniul IT prin sesiuni susținute de reprezentanți ai
+                companiilor de IT din Cluj. Această fază pregătitoare este esențială pentru a-și
+                înțelege cât mai bine provocările următoare.
+              </p>
+              <p>
+                Competiția propriu-zisă are loc după perioada de training. Astfel, cunoștințele
+                acumulate sunt evaluate în această etapă. CodeRun reprezintă un mediu în care
+                studenții își pot îmbogăți cunoștințele în domeniul IT, lucra cu tehnologii
+                relevante și interacționa direct cu mediul de lucru din companiile de IT. În plus,
+                există ocazia de a câștiga premii pe măsură.
+              </p>
+              <a
+                href="https://coderun.bestcj.ro/coderun/"
+                class="btn align-self-center text-white"
+                style="background-color: rgb(180, 82, 27)"
+                >CodeRun</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- tab pentru BLR -->
+        <div id="item-1-6" class="row d-flex justify-content-center mt-5">
+          <div
+            class="card align-self-center d-inline-flex justify-content-around col-10 col-sm-10 rounded-5 text-center p-0"
+            style="background-color: rgb(252, 247, 236, 0.9)"
+          >
+            <h2 class="card-header fw-bold fst-italic">BattleLab Robotica</h2>
+            <div class="card-body d-flex flex-column align-self-center">
+              <!-- <b class="fs-5 my-3">FACTS</b> -->
+              <p>
+                Colaborare, creativitate, sete de cunoaștere și pasiune pentru a crea amintiri
+                memorabile. Acestea sunt doar câteva cuvinte care descriu acest proiect.
+              </p>
+              <p>
+                Nu rata oportunitatea de a-ți aduce propriul robot în arenă și de a-ți exersa
+                competențele de programare, mecanică, electronică și fund-raising în cadrul acestui
+                eveniment. Echipa noastră este aici pentru a te sprijini!
+              </p>
+              <p>
+                Dacă nu îți dorești să construiești propriul robot, dar ești curios să asiști la
+                luptele dintre roboți, te invităm să ni te alături ca spectator la BattleLab și să
+                te bucuri de o nouă doză de adrenalină!
+              </p>
+              <p>
+                Dacă pasiunea pentru acest domeniu te-a captivat și dorești să afli detalii
+                suplimentare despre competiție, te invităm să accesezi site-ul nostru oficial prin
+                scanarea codului QR de mai jos sau să ne urmărești pe paginile noastre de Facebook
+                și Instagram, după numele BattleLab Robotica.
+              </p>
+              <a
+                href="https://battlelab.ro/"
+                class="btn align-self-center text-white"
+                style="background-color: rgb(180, 82, 27)"
+                >BattleLab Robotica</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="container-fluid d-flex flex-column mt-5 pb-2"
+      style="background-color: rgb(180, 82, 27)"
+    >
+      <div class="row-cols-12 d-flex justify-content-center">
+        <a class="col-2 col-md-1 px-md-4 py-md-2 mx-2" href="https://www.facebook.com/BESTcluj">
+          <img src="facebook-alb.png" class="img-fluid align-self-center" alt="" />
+        </a>
+        <a
+          class="col-2 col-md-1 px-md-4 py-md-2 mx-2"
+          href="https://www.instagram.com/best_clujnapoca/"
+        >
+          <img src="instagram-alb.png" class="img-fluid align-self-center" alt="" />
+        </a>
+        <a
+          class="col-2 col-md-1 px-md-4 py-md-2 mx-2"
+          href="https://www.linkedin.com/company/best-cluj-napoca"
+        >
+          <img src="linkedin-alb.png" class="img-fluid align-self-center" alt="" />
+        </a>
+      </div>
+      <div class="text-center text-wrap fs-6 d-flex justify-content-center">
+        <p class="m-0">
+          © 2023 Copyright:
+          <b> BEST Cluj-Napoca </b>
+          | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
